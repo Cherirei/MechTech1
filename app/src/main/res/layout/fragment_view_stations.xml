@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewStationsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn"
+        android:textColor="#000"
+        android:id="@+id/back_view"
+        />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@+id/back_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/recyclerView"
+    android:orientation="vertical"/>
+
+
+
+
+</RelativeLayout>

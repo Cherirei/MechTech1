@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "977866750409",
+    "firebase_url": "https://tech-28ebb-default-rtdb.firebaseio.com",
+    "project_id": "tech-28ebb",
+    "storage_bucket": "tech-28ebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977866750409:android:9560fc58813be8e6205018",
+        "android_client_info": {
+          "package_name": "com.example.mechtech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977866750409-gmoa77b511tqndrd8oljtkpaji5eecgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mechtech",
+            "certificate_hash": "5d8719f49013fe314e1d7dc619d50307305d20a0"
+          }
+        },
+        {
+          "client_id": "977866750409-1r2iu6v5pvfl0vl9rqso2rp4ooaq03ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1GFYlBX5BBhRDX92kaDHfo418RDhfzDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977866750409-1r2iu6v5pvfl0vl9rqso2rp4ooaq03ml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

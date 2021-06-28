@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/arsenal_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/rate_us"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/button_rating"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/bg_btn"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="6dp"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginStart="98dp" />
+
+
+</FrameLayout>

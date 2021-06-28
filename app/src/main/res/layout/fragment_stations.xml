@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".StationsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Add Service Stations"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"/> >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Station Code: "
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <EditText
+                    android:id="@+id/station_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Code"
+                    android:textColor="#000"/>
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp">
+               <TextView
+                   android:layout_width="130dp"
+                   android:layout_height="wrap_content"
+                   android:text="Name: "
+                   android:textSize="18sp"
+                   android:textColor="#000"/>
+            <EditText
+                android:id="@+id/station_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:textColor="#000"/>
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="County: "
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+               <EditText
+                   android:id="@+id/station_county"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:hint="Enter county"
+                   android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Address: "
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+               <EditText
+                   android:id="@+id/station_postal_code"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="number"
+                   android:hint="Enter Address"
+                   android:textColor="#000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours: "
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <EditText
+                    android:id="@+id/working_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Hours"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number: "
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <EditText
+                    android:id="@+id/station_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter PhoneNo"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_back_station"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/bg_btn"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/btn_add_station"
+            android:layout_margin="20dp"
+            android:layout_gravity="right"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/bg_btn"/>
+        </LinearLayout>
+       </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

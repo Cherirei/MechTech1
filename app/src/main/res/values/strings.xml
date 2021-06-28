@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MechTech</string>
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">Close Navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="user_profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="setting_fragment">Settings</string>
+    <string name="rate_us">Rate Our Application</string>
+    <string name="feedback">Feedback</string>
+    <string name="stations">Stations</string>
+    <string name="notification_fragment">Notifications</string>
+    <string name="submit">Submit</string>
+    <string name="see_near_service_providers">See Near Service Providers</string>
+    <string name="click_to_get_your_location">Click to get your Location</string>
+    <string name="don_t_panic">Don\'t Panic</string>
+
+</resources>
