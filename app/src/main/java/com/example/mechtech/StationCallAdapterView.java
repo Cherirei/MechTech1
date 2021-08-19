@@ -13,8 +13,8 @@ import java.util.ArrayList;
 
 public class StationCallAdapterView extends RecyclerView.Adapter<StationCallAdapterView.MyViewHolder> {
 
-    private ArrayList<ServiceStations> sList;
-    private Context context;
+    private final ArrayList<ServiceStations> sList;
+    private final Context context;
     private OnSelect onSelect;
     String number;
 
