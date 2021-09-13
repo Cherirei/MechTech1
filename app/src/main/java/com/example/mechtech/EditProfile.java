@@ -86,7 +86,7 @@ public class EditProfile extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 Toast.makeText(EditProfile.this, "Profile Updated.", Toast.LENGTH_SHORT).show();
                                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                                ft.replace(R.id.frament_container, new UserProfileFragment());
+                                ft.replace(R.id.fragment_container, new UserProfileFragment());
                                 finish();
                             }
                         });

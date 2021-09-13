@@ -28,13 +28,13 @@ public class AdminPanelFragment extends Fragment {
         cardViewAdd_Stations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frament_container,new StationsFragment()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StationsFragment()).commit();
             }
         });
         cardView_ViewSations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frament_container,new ViewStationsFragment()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ViewStationsFragment()).commit();
             }
         });
         return view;

@@ -14,5 +14,21 @@
     <string name="see_near_service_providers">See Near Service Providers</string>
     <string name="click_to_get_your_location">Click to get your Location</string>
     <string name="don_t_panic">Don\'t Panic</string>
+    <string name="service_station_finder">Service Station finder</string>
+    <string name="code">Code:</string>
+    <string name="kibu">kibu</string>
+    <string name="name">Name:</string>
+    <string name="kibabii">Kibabii</string>
+    <string name="county">County:</string>
+    <string name="bungoma">Bungoma</string>
+    <string name="address">Address:</string>
+    <string name="_1699">1699</string>
+    <string name="working_hours">Working Hours:</string>
+    <string name="_7am_to_5pm">7am to 5pm</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="_0729105112">0729105112</string>
+    <string name="call">Call</string>
+    <string name="add_service_stations">Add Service Stations</string>
+    <string name="view_service_stations">View Service Stations</string>
 
 </resources>

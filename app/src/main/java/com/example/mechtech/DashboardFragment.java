@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 import java.io.IOException;
@@ -28,13 +29,14 @@ import java.util.Locale;
 public class DashboardFragment extends Fragment {
     private FusedLocationProviderClient fusedLocationProviderClient;
     TextView textView1, textView2, textView3, textView4, textView5;
-
+    FloatingActionButton floatingActionButton;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
+        floatingActionButton=view.findViewById(R.id.compose_message);
         Button btnLocation = view.findViewById(R.id.button_location);
         Button btnGet_Service = view.findViewById(R.id.button_get_service);
         textView1 = view.findViewById(R.id.text_view1);
@@ -46,6 +48,12 @@ public class DashboardFragment extends Fragment {
         //initialise fusedLocationProviderClient
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
 
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new NotificationFragment()).commit();
+            }
+        });
         btnLocation.setOnClickListener(v -> {
             //Check permission
             if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION)
@@ -60,7 +68,7 @@ public class DashboardFragment extends Fragment {
         });
 
         btnGet_Service.setOnClickListener(v -> {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new StationCallFragment()).commit();
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StationCallFragment()).commit();
             // String filterCounty=textView2.getText().toString();
             //getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ViewStationsFragment(filterCounty)).commit();
         });

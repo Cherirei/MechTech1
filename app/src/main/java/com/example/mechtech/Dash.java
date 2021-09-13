@@ -56,13 +56,13 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
         navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new DashboardFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
 
             //Initialise and Assign Variables
             BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
             //Set Home Selected
-            getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new DashboardFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
             bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         }
     }
@@ -85,7 +85,7 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
                     selectedFragment = new UserProfileFragment();
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, selectedFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;
         }
     };
@@ -109,16 +109,16 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new DashboardFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
                 break;
             case R.id.nav_service_stations:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new StationCallFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StationCallFragment()).commit();
                 break;
             case R.id.nav_profile:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new UserProfileFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UserProfileFragment()).commit();
                 break;
             case R.id.nav_rate_us:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new RatingFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RatingFragment()).commit();
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Sorry!! The App is not in PlayStore Currently.", Toast.LENGTH_SHORT).show();
