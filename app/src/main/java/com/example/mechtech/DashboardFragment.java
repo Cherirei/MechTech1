@@ -47,14 +47,14 @@ public class DashboardFragment extends Fragment {
 
         //initialise fusedLocationProviderClient
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
-
+        //getLocation();
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new NotificationFragment()).commit();
             }
         });
-        btnLocation.setOnClickListener(v -> {
+       btnLocation.setOnClickListener(v -> {
             //Check permission
             if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                     == PackageManager.PERMISSION_GRANTED) {
@@ -66,6 +66,8 @@ public class DashboardFragment extends Fragment {
                         {Manifest.permission.ACCESS_FINE_LOCATION}, 44);
             }
         });
+
+
 
         btnGet_Service.setOnClickListener(v -> {
             getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StationCallFragment()).commit();
