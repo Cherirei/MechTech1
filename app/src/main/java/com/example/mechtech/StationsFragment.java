@@ -55,14 +55,12 @@ public class StationsFragment extends Fragment {
 
                 } else if (name.isEmpty()) {
                     Toast.makeText(getContext(), "Name Field is empty", Toast.LENGTH_SHORT).show();
-
                 } else if (county.isEmpty()) {
                     Toast.makeText(getContext(), "County Field is empty", Toast.LENGTH_SHORT).show();
                 } else if (address.isEmpty()) {
                     Toast.makeText(getContext(), "Address Field is empty", Toast.LENGTH_SHORT).show();
                 } else if (workingHrs.isEmpty()) {
                     Toast.makeText(getContext(), "Working Hours Field is empty", Toast.LENGTH_SHORT).show();
-
                 } else if (phoneNo.isEmpty()) {
                     Toast.makeText(getContext(), "Phone Number Field is empty", Toast.LENGTH_SHORT).show();
                 } else {

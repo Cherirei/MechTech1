@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DashboardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,105 +17,105 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:fontFamily="@font/bungee"
+            android:fontFamily="@font/arsenal_bold"
             android:gravity="center_horizontal"
-            android:text="@string/don_t_panic"
+            android:text="@string/your_location"
             android:textColor="#000"
             android:textSize="20sp"
-            app:drawableTopCompat="@drawable/ic_mechanics" />
-
-
-        <Button
-            android:id="@+id/button_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="5dp"
-            android:gravity="center_horizontal"
-            android:text="@string/click_to_get_your_location"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginStart="90dp"/>
-
+            app:drawableTopCompat="@drawable/ic_location" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/text_view1"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center" />
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="Country"
+                android:textColor="#0F32E4"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text_view2"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="County"
+                android:textColor="#0F32E4"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/text_view3"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center" />
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="Sub Locality"
+                android:textColor="#0F32E4"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text_view4"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center" />
-        </LinearLayout>
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="Featured Name"
+                android:textColor="#0F32E4"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/text_view5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center" />
+
+            <TextView
+                android:id="@+id/text_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="Address"
+                android:textColor="#0F32E4"
+                android:textSize="20sp" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/button_get_service"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="?android:attr/windowBackground"
-            android:gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_near_mechanics"
+            android:padding="5dp"
             android:text="@string/see_near_service_providers"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:layout_marginStart="10dp" />
+            android:textColor="#fff"
+            android:textSize="20sp" />
 
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                android:id="@+id/compose_message"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentEnd="true"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:layout_alignParentBottom="true"-->
+        <!--                android:layout_marginEnd="26dp"-->
+        <!--                android:layout_marginRight="26dp"-->
+        <!--                android:layout_marginBottom="17dp"-->
+        <!--                android:src="@drawable/help_icon"-->
+        <!--                android:tint="#100F0F"-->
+        <!--                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck"/>-->
+        <!--        </RelativeLayout>-->
 
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/compose_message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="20sp"
-        android:tint="@color/browser_actions_bg_grey"
-        android:src="@drawable/ic_action_compose"
-        android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+
 </FrameLayout>
 
 

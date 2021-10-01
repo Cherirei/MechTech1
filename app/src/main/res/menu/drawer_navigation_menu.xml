@@ -6,14 +6,14 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_nav_home"
             android:title="Home" />
-        <item
-            android:id="@+id/nav_service_stations"
-            android:icon="@drawable/ic_service_station1"
-            android:title="Service Stations" />
+        <!--        <item-->
+        <!--            android:id="@+id/nav_service_stations"-->
+        <!--            android:icon="@drawable/ic_service_station1"-->
+        <!--            android:title="Service Stations" />-->
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_user"
-            android:title="Profile" />
+            android:title="User Account" />
         <item
             android:id="@+id/nav_rate_us"
             android:icon="@drawable/ic_star1"
@@ -25,10 +25,10 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_share"
                 android:title="Share" />
-           <!-- <item
-                android:id="@+id/nav_feedback"
-                android:icon="@drawable/ic_feedback1"
-                android:title="Feedback" />-->
+            <!-- <item
+                 android:id="@+id/nav_feedback"
+                 android:icon="@drawable/ic_feedback1"
+                 android:title="Feedback" />-->
             <item
                 android:id="@+id/nav_contact_us"
                 android:icon="@drawable/ic_contact"
@@ -36,8 +36,7 @@
             <item
                 android:id="@+id/nav_sign_out"
                 android:icon="@drawable/ic_exit"
-                android:title="Logout"
-                />
+                android:title="Logout" />
         </menu>
     </item>
 </menu>

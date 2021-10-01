@@ -1,7 +1,8 @@
 package com.example.mechtech;
 
 public class ServiceStations {
-    String code, name, county, address, workingHours,phoneNo;
+    private String code, name, county, address, workingHours, phoneNo;
+
     public ServiceStations() {
     }
 

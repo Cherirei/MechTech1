@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,11 +22,9 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Dash extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    private NavigationView navigationView;
-    private Toolbar toolbar;
     /*  FusedLocationProviderClient fusedLocationProviderClient;
       Button btnLocation;*/
-    TextView textView1, textView2, textView3, textView4, textView5;
+   // TextView textView1, textView2, textView3, textView4, textView5;
 
 
     @Override
@@ -35,15 +32,15 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash);
 
-        toolbar = findViewById(R.id.tool_bar);
+        Toolbar toolbar = findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
-        //btnLocation = findViewById(R.id.button_location);
+       /* //btnLocation = findViewById(R.id.button_location);
         textView1 = findViewById(R.id.text_view1);
         textView2 = findViewById(R.id.text_view2);
         textView3 = findViewById(R.id.text_view3);
         textView4 = findViewById(R.id.text_view4);
-        textView5 = findViewById(R.id.text_view5);
+        textView5 = findViewById(R.id.text_view5);*/
 
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open,
@@ -51,43 +48,37 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        //Initialise and Assign Variables
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        navigationView = findViewById(R.id.navigation_view);
+        NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
-
-            //Initialise and Assign Variables
-            BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
             //Set Home Selected
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
-            bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
+            navigationView.setCheckedItem(R.id.nav_home);
         }
     }
-
-    private final BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-            Fragment selectedFragment = null;
-            switch (menuItem.getItemId()) {
-                case R.id.home:
-                    selectedFragment = new DashboardFragment();
-                    break;
-                case R.id.notification:
-                    selectedFragment = new NotificationFragment();
-                    break;
-               /* case R.id.setting:
-                    selectedFragment = new SettingFragment();
-                    break;*/
-                case R.id.profile:
-                    selectedFragment = new UserProfileFragment();
-                    break;
-            }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-            return true;
+    private final BottomNavigationView.OnNavigationItemSelectedListener navListener = menuItem -> {
+        Fragment selectedFragment = null;
+        switch (menuItem.getItemId()) {
+            case R.id.home:
+                selectedFragment = new DashboardFragment();
+                break;
+            case R.id.notification:
+                selectedFragment = new HelpFragment();
+                break;
+           /* case R.id.setting:
+                selectedFragment = new UserFragment();
+                break;*/
+            case R.id.profile:
+                selectedFragment = new UserProfileFragment();
+                break;
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+        return true;
     };
 
     @Override
@@ -111,14 +102,15 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
                 break;
-            case R.id.nav_service_stations:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StationCallFragment()).commit();
-                break;
+//            case R.id.nav_service_stations:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StationCallFragment()).commit();
+//                break;
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UserProfileFragment()).commit();
                 break;
             case R.id.nav_rate_us:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RatingFragment()).commit();
+                Toast.makeText(this.getApplicationContext(), "Currently Unavailable!!", Toast.LENGTH_LONG).show();
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RatingFragment()).commit();
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Sorry!! The App is not in PlayStore Currently.", Toast.LENGTH_SHORT).show();
@@ -130,7 +122,7 @@ public class Dash extends AppCompatActivity implements NavigationView.OnNavigati
                 startActivity(Intent.createChooser(shareIntent, "Share via"));*/
                 break;
             /*case R.id.nav_feedback:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new FeedbackFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FeedbackFragment()).commit();
                 break;*/
             case R.id.nav_contact_us:
                 //try {

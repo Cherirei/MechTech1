@@ -20,15 +20,14 @@
             android:background="@drawable/bg_round"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/service_station_finder"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="@string/service_station_finder"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="20sp" />-->
         </androidx.appcompat.widget.Toolbar>
 
         <FrameLayout

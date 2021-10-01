@@ -1,34 +1,41 @@
 <resources>
-    <string name="app_name">MechTech</string>
+    <string name="app_name">Mechanic Locator</string>
     <string name="navigation_drawer_open">Open Navigation drawer</string>
     <string name="navigation_drawer_close">Close Navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="user_profile">Profile</string>
+    <string name="user_profile">Account</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="setting_fragment">Settings</string>
     <string name="rate_us">Rate Our Application</string>
     <string name="feedback">Feedback</string>
     <string name="stations">Stations</string>
-    <string name="notification_fragment">Notifications</string>
+    <!--<string name="notification_fragment">Notifications</string>-->
     <string name="submit">Submit</string>
-    <string name="see_near_service_providers">See Near Service Providers</string>
+    <string name="see_near_service_providers">See Near Mechanics</string>
     <string name="click_to_get_your_location">Click to get your Location</string>
-    <string name="don_t_panic">Don\'t Panic</string>
     <string name="service_station_finder">Service Station finder</string>
-    <string name="code">Code:</string>
+    <string name="code">Code</string>
     <string name="kibu">kibu</string>
-    <string name="name">Name:</string>
+    <string name="name">Name</string>
     <string name="kibabii">Kibabii</string>
-    <string name="county">County:</string>
+    <string name="county">County</string>
     <string name="bungoma">Bungoma</string>
-    <string name="address">Address:</string>
+    <string name="address">Address</string>
     <string name="_1699">1699</string>
-    <string name="working_hours">Working Hours:</string>
+    <string name="working_hours">Working Hours</string>
     <string name="_7am_to_5pm">7am to 5pm</string>
-    <string name="phone_number">Phone Number:</string>
+    <string name="phone_number">Phone Number</string>
     <string name="_0729105112">0729105112</string>
     <string name="call">Call</string>
-    <string name="add_service_stations">Add Service Stations</string>
+    <string name="add_service_stations">Add Service Station</string>
     <string name="view_service_stations">View Service Stations</string>
+    <string name="help_center"><u>Help Center</u></string>
+    <string name="new_user_signup"><u>New user? SignUp</u></string>
+    <string name="email">Email</string>
+    <string name="your_location">Your Current Location</string>
+    <string name="change_password"><u>Change Password</u></string>
+    <string name="edit_profile2"><u>Edit Profile</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

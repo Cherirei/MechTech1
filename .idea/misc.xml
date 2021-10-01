@@ -3,22 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/bg_btn.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/bg_near_mechanics.xml" value="0.22256410256410256" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/bg_round.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/call_btn.xml" value="0.22256410256410256" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/help_icon.xml" value="0.22256410256410256" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/drawable/profile.xml" value="0.22256410256410256" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/font/bungee.xml" value="0.2351851851851852" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout-v21/activity_dash.xml" value="0.21" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_admin_user.xml" value="0.16296296296296298" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_dash.xml" value="0.25" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout-v21/fragment_help_page.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout-v21/fragment_rating.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout-v21/fragment_stations.xml" value="0.18" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout-v21/fragment_users.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_admin_user.xml" value="0.17" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_dash.xml" value="0.22" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_edit_profile.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/call_stations_items.xml" value="0.2" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/call_stations_items.xml" value="0.25" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_admin_panel.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_call_station.xml" value="0.25" />
-        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_dashboard.xml" value="0.16" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_feedback.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_help.xml" value="0.25" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_help_page.xml" value="0.22" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_notification.xml" value="0.25" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_rating.xml" value="0.21" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_setting.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_stations.xml" value="0.1712962962962963" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_user_profile_frament.xml" value="0.16296296296296298" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_users.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/fragment_view_stations.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/nav_header.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/row_users.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/layout/stations_items.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/menu/bottom_navigation.xml" value="0.1712962962962963" />
         <entry key="..\:/Users/eXpert/AndroidStudioProjects/MechTech/app/src/main/res/menu/drawer_navigation_menu.xml" value="0.1712962962962963" />

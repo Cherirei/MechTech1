@@ -34,14 +34,14 @@ public class StationCallFragment extends Fragment {
     private StationCallAdapterView adapter;
     private ArrayList<ServiceStations> list;
     private CardView cardView_Call;
-    /* *//* private String fCounty;
+    private String fCounty;
 
-    public ViewStationsFragment() {
+    public StationCallFragment() {
     }
 
-    public ViewStationsFragment(String fCounty) {
+    public StationCallFragment(String fCounty) {
         this.fCounty = fCounty;
-    }*/
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,55 +49,49 @@ public class StationCallFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_call_station, container, false);
 
-/*
-        cardView_Call=view.findViewById(R.id.cardView_call);
-
-        cardView_Call.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "I am responding", Toast.LENGTH_SHORT).show();
-            }
-        });*/
         db = FirebaseDatabase.getInstance();
 
         recyclerViewCall = view.findViewById(R.id.recyclerView_call);
+
         recyclerViewCall.setHasFixedSize(true);
         recyclerViewCall.setLayoutManager(new LinearLayoutManager(getContext()));
 
         list = new ArrayList<>();
         adapter = new StationCallAdapterView(getContext(), list);
         recyclerViewCall.setAdapter(adapter);
-        adapter.setOnSelect(new StationCallAdapterView.OnSelect() {
-            @Override
-            public void onPhoneClick(String number) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel: " + number));
-                if (ContextCompat.checkSelfPermission(getContext(),
-                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    startActivity(Intent.createChooser(intent, null));
-                    // startActivity(Intent.createChooser(intent, "Share Options"),null);
+        adapter.setOnSelect(number -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel: " + number));
+            if (ContextCompat.checkSelfPermission(getContext(),
+                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                startActivity(Intent.createChooser(intent, null));
 
-                } else {
-                    ActivityCompat.requestPermissions(getActivity(), new String[]
-                            {Manifest.permission.CALL_PHONE}, 44);
-                }
-
+            } else {
+                ActivityCompat.requestPermissions(getActivity(), new String[]
+                        {Manifest.permission.CALL_PHONE}, 44);
             }
         });
 
         root = db.getReference("ServiceStations");
         //root=db.getReference().child();
         //  Query query=root.child("ServiceStations").orderByChild("county").equalTo(fCounty);
-
         root.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // Log.i("BUG_FIX", fCounty);
                 list.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    ServiceStations serviceStations = dataSnapshot.getValue(ServiceStations.class);
-                    list.add(serviceStations);
+                if (fCounty != null) {
+                    // Log.i("BUG_FIX", fCounty + " is not null");
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                        //Log.i("BUG_FIX", "dataSnapshot");
+                        ServiceStations serviceStations = dataSnapshot.getValue(ServiceStations.class);
+                        if (serviceStations != null && fCounty.startsWith(serviceStations.getCounty())) {
+                            list.add(serviceStations);
+                            //Log.i("BUG_FIX", "here");
+                        }
+                    }
+                    adapter.notifyDataSetChanged();
                 }
-                adapter.notifyDataSetChanged();
             }
 
             @Override

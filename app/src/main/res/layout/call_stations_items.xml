@@ -2,11 +2,11 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="210dp"
     android:layout_margin="10dp"
     android:padding="10dp"
     android:id="@+id/cardView_call"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
     <LinearLayout
@@ -24,8 +24,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:text="@string/code"
-            android:gravity="center"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginLeft="8dp"
                 android:text="@string/name"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -78,7 +78,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginLeft="8dp"
                 android:text="@string/county"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -105,7 +105,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginLeft="8dp"
                 android:text="@string/address"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -132,7 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginLeft="8dp"
                 android:text="@string/working_hours"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -159,7 +159,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:layout_marginLeft="8dp"
                 android:text="@string/phone_number"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -176,18 +176,18 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
         <TextView
             android:id="@+id/call_us"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="0dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="#DA417341"
             android:text="@string/call"
-            android:background="@drawable/bg_btn"
             android:gravity="center"
+            android:layout_gravity="end"
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#fff"/>
 
     </LinearLayout>
 
