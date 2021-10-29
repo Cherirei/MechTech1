@@ -103,14 +103,12 @@ public class UserProfileFragment extends Fragment {
                     }
                 });
                 passwordResetDialog.create().show();
-
             }
         });
 
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent i = new Intent(v.getContext(), EditProfile.class);
                 i.putExtra("Name", name.getText().toString());
                 i.putExtra("Email", email.getText().toString());

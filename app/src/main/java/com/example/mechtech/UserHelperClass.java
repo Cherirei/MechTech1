@@ -1,17 +1,18 @@
 package com.example.mechtech;
 
 public class UserHelperClass {
-    String name, username, email, phoneNo, password;
+    String name, username, email, phoneNo, password,uid;
 
-    public UserHelperClass(String name, String username, String email, String phoneNo, String password) {
+    public UserHelperClass() {
+    }
+
+    public UserHelperClass(String name, String username, String email, String phoneNo, String password, String uid) {
         this.name = name;
         this.username = username;
         this.email = email;
         this.phoneNo = phoneNo;
         this.password = password;
-    }
-
-    public UserHelperClass() {
+        this.uid = uid;
     }
 
     public String getName() {
@@ -54,5 +55,11 @@ public class UserHelperClass {
         this.password = password;
     }
 
+    public String getUid() {
+        return uid;
+    }
 
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
 }

@@ -59,6 +59,7 @@
     android:layout_width="120dp"
     android:layout_gravity="center"
     android:layout_height="40dp"
+    android:visibility="gone"
     android:text="View Users"
     android:gravity="center"
     android:layout_marginTop="30dp"
